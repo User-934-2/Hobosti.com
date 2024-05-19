@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная </title>
+  <link href="C:\Users\shauk\Downloads\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap.css" rel="stylesheet"> 
+  <style>
+    /* Настройки стилей */
+    .news {
+      margin-bottom: 20px;
+    }
+     /* Стили для футера */
+    footer {
+      background-color: blue;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+      #sidebar {
+      position: absolute;
+      left: 0;
+      top: 20;
+      height: 100%;
+      width: 250px;
+      background-color: #343a40;
+      padding-top: 50px;
+      transition: all 0.3s;
+    }
+    #sidebar.active1 {
+      width: 50px;
+    }
+    #content {
+      transition: margin-left 0.3s;
+      padding: 20px;
+      margin-left: 165px; 
+    }
+    /* Стили для навигационной панели */
+    #sidebarCollapse {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+      z-index: 999;
+      color: #fff;
+    }
+
+  .nav.flex-column {
+  border: 1px solid #ccc; /* Добавляем границу */
+  border-radius: 0px; /* Опционально: закругляем углы */
+  padding: 10px; /* Опционально: добавляем отступ вокруг списка */
+}
+
+.nav-item {
+  border-bottom: 1px solid #ddd; /* Добавляем горизонтальные разделители между элементами списка */
+}
+
+.nav-item:last-child {
+  border-bottom: none; /* Убираем разделитель у последнего элемента списка */
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img class="navbar-brand" src="C:\Users\shauk\Downloads\логотип для сайта.png"  width="45px" height="50px">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="C:\Users\shauk\Документы\ИКТ\Новостная лента HTML CSS JavaScript\Главная часть.html">Главная</a>
+        </li>
+        <li><h3>_____</h3></li>
+        <li><h3>  HoБosti  </h3></li>
+        <li><h3>   _____ </h3></li>
+      </ul>
+     <form class="d-flex" id="searchForm">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Меню слева-->
+<div id="sidebar">
+    <ul class="nav flex-column">
+       <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Главная часть.html">Главная</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Экономика\Экокномика.html">Экономика</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Политика\Политика.html">Политика</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Технологии\Технологии.html">Технологии</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Спорт\Спорт.html">Спорт</a></li>
+    </ul>
+  </div>
+  <div id="sidebarCollapse">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm-1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1z"/>
+    </svg>
+  </div>
+
+  <h6 align="right">
+      <div id="google_translate_element_T"></div>
+    </h6>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9" id="content">
+      <h1 class="mt-5" align="center">«Существование Украины зависит от нас». Боррель назвал срок капитуляции Киева без помощи Запада </h1>
+  <!--Main-->
+  <p>
+
+Существование Украины зависит от поставок западного оружия, заявил глава дипломатии ЕС на встрече со студентами в Оксфордском университете. Жозеп Боррель также назвал Россию «главной угрозой для Европы» и призвал к ясному осознанию этого риска.
+Глава дипломатии Евросоюза Жозеп Боррель во время выступления в Оксфордском университете в Великобритании заявил, что без поставок западного оружия Украина капитулирует «за две недели».
+
+«Существование Украины зависит от нас. Я знаю, как можно закончить войну на Украине. Это можно сделать за пару недель — просто прекратить поставки», — сказал он.
+
+Он подчеркнул, что в случае прекращения поставок оружия, Украина не сможет оказать сопротивление и будет вынуждена капитулировать.
+
+Россия — главная угроза существования Европы
+Глава европейской дипломатии также отметил, что Россия является «главной угрозой для существования Европы». Он подчеркнул необходимость ясного осознания и принятия этого риска.
+
+Обсуждая возможные сценарии дальнейшего развития украинского конфликта, Боррель обратился к студентам с вопросом о том, как они реагировали бы на возможное вторжение российских войск в их страны.
+
+Подробнее
+tts-kazan.ru
+Получить предложение
+favicon
+Он подчеркнул, что молодое поколение, вероятно, не будет готово идти воевать за Киев, однако спросил, будут ли они готовы присоединиться к армии, необходимой для противодействия вторжению. Боррель отметил, что настало время задуматься над этим вопросом.
+
+Подчеркивая важность ситуации, он призвал к поддержке Украины, как страны, которая стоит на защите интересов Евросоюза от «российского вторжения».
+
+
+«Судьбу Киева вряд ли изменит»: что даст Украине помощь от США на $61 млрд
+21 апреля 15:33
+Опасения о возможном поражении Украины в конце апреля выражал также генеральный секретарь НАТО Йенс Столтенберг. Во время пресс-конференции в Киеве он заявил, что будет очень дорого стоить Североатлантическому альянсу.
+
+«Самый крупный риск — это если президент Путин достигнет целей и если Путин выиграет», — сказал тогда он.
+
+По мнению Столтенберга, в случае победы России странам-членам НАТО придется выделить «невероятно большое количество денег» и инвестировать их в свою безопасность.
+
+«Грандиозное признание»
+Слова Борреля прокомментировала официальный представитель МИД России Мария Захарова, назвав его грандиозным признанием относительно западной поддержки Украины.
+
+«Грандиозное признание! Вот вам и вся «формула мира» — прекращение поставок Западом оружия киевскому режиму», — написала она в своем Telegram-канале.
+
+Украина продержится неделю
+В октябре 2023 года президент России Владимир Путин заявил, что в случае прекращения поставок западного вооружения Украине, страна сможет продержаться лишь неделю. Он подчеркнул, что с виду сбалансированный бюджет Украины является результатом значительных ежемесячных вливаний средств со стороны западных стран.
+
+«Где-то четыре-пять миллиардов ежемесячно по разным каналам — это кредиты, всякие гранты и так далее — поступают на Украину. Стоит это только прекратить – все, через неделю все ляжет», — говорил он.
+
+Россия осуждает западные государства за предоставление военной помощи Украине, утверждая, что эта помощь не изменит хода боевых действий, и что цели спецоперации будут достигнуты.</p>
+
+  <br><br><br><br><br><br>
+  
+    <footer>
+    <div class="footer-content">
+      <hr>
+        <p>Hobosti - узнавайте обо всем на свете</p>
+        <p>Наши соцсети:</p>
+        <a href=""><img src="C:\Users\shauk\Downloads\Лого телеграм.jpg" height="30px" width="30px"></a>
+        <a href=""><img src="C:\Users\shauk\Downloads\Лого ватсап.jpg" height="30px" width="30px"></a>
+        <hr>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключаем Bootstrap JS (jQuery необходимо для работы Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="C:\Users\shauk\Downloads\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\min.js"></script>
+   <script src="C:\Users\shauk\Downloads\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\popper.min.js"></script>
+
+  <script>
+   // JavaScript для сворачивания и разворачивания меню
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active1');
+      $('#content').toggleClass('active1');
+      // Переключение видимости текста в навигационной панели
+      $('.nav-link.active1').toggleClass('visually-hidden');
+    });
+  });
+</script>
+<script>
+  //Скрипт для работы пойсковика 
+  // Функция для выполнения поиска
+  function searchNews() {
+    // Получаем значение из поля ввода
+    var query = document.getElementById('searchInput').value.toLowerCase();
+    var news = document.getElementsByClassName('news');
+
+    // Проходимся по всем новостям и скрываем те, которые не соответствуют запросу
+    for (var i = 0; i < news.length; i++) {
+      var title = news[i].getElementsByClassName('card-title')[0].innerText.toLowerCase();
+      if (title.includes(query)) {
+        news[i].style.display = "block";
+      } else {
+        news[i].style.display = "none";
+      }
+    }
+  }
+
+  // Обработка отправки формы поиска
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Отменяем стандартное поведение формы
+    searchNews(); // Выполняем поиск
+  });
+</script>
+
+<!-- Перевод сайта -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

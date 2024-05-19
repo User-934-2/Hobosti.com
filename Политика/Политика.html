@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная </title>
+  <link href="C:\Users\shauk\Downloads\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap.css" rel="stylesheet"> 
+  <style>
+    /* Настройки стилей */
+    .news {
+      margin-bottom: 20px;
+    }
+     /* Стили для футера */
+    footer {
+      background-color: blue;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+      #sidebar {
+      position: absolute;
+      left: 0;
+      top: 20;
+      height: 100%;
+      width: 250px;
+      background-color: #343a40;
+      padding-top: 50px;
+      transition: all 0.3s;
+    }
+    #sidebar.active1 {
+      width: 50px;
+    }
+    #content {
+      transition: margin-left 0.3s;
+      padding: 20px;
+      margin-left: 165px; 
+    }
+    /* Стили для навигационной панели */
+    #sidebarCollapse {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+      z-index: 999;
+      color: #fff;
+    }
+
+  .nav.flex-column {
+  border: 1px solid #ccc; /* Добавляем границу */
+  border-radius: 0px; /* Опционально: закругляем углы */
+  padding: 10px; /* Опционально: добавляем отступ вокруг списка */
+}
+
+.nav-item {
+  border-bottom: 1px solid #ddd; /* Добавляем горизонтальные разделители между элементами списка */
+}
+
+.nav-item:last-child {
+  border-bottom: none; /* Убираем разделитель у последнего элемента списка */
+}
+body{
+  background-color: salmon;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img class="navbar-brand" src="C:\Users\shauk\Downloads\логотип для сайта.png"  width="45px" height="50px">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="C:\Users\shauk\Документы\ИКТ\Новостная лента HTML CSS JavaScript\Главная часть.html">Главная</a>
+        </li>
+        <li><h3>_____</h3></li>
+        <li><h3>  HoБosti  </h3></li>
+        <li><h3>   _____ </h3></li>
+      </ul>
+     <form class="d-flex" id="searchForm">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Меню слева-->
+<div id="sidebar">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Главная часть.html">Главная</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Экономика\Экокномика.html">Экономика</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Политика\Политика.html">Политика</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Технологии\Технологии.html">Технологии</a></li>
+      <li class="nav-item"><a class="nav-link active1" href="C:\Users\shauk\OneDrive\Desktop\Новостная лента HTML CSS JavaScript\Спорт\Спорт.html">Спорт</a></li>
+    </ul>
+  </div>
+  <div id="sidebarCollapse">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm-1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1z"/>
+    </svg>
+  </div>
+
+  <!--Переводчик-->
+  <h6 align="right"><!-- Выбор языка -->
+      <div id="google_translate_element"></div>
+    </h6>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9" id="content">
+      <h1 class="mt-5" align="center">Новости о политике </h1>
+  <!--Main-->
+  <div class="container">
+    <h1 class="mt-5">Политика</h1>
+    <div class="news">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">«Существование Украины зависит от нас». Боррель назвал срок капитуляции Киева без помощи Запада</h5>
+          <p class="card-text">Боррель предрек Украине поражение «за две недели» без поставок западного оружия</p>
+          <a href="C:\Users\shauk\Документы\ИКТ\Новостная лента HTML CSS JavaScript\Политика\Политика 3.html" class="btn btn-primary">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Пример новости -->
+    <div class="news">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">На Западе решили не забирать все активы России. Но есть нюанс</h5>
+          <p class="card-text">В повестке стран «Большой семерки» больше не стоит вопрос...</p>
+          <a href="C:\Users\shauk\Документы\ИКТ\Новостная лента HTML CSS JavaScript\Политика\Политика 4.html" class="btn btn-primary">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    
+    
+   <footer>
+    <div class="footer-content">
+      <hr>
+        <p>Hobosti - узнавайте обо всем на свете</p>
+        <p>Наши соцсети:</p>
+        <a href=""><img src="C:\Users\shauk\Downloads\Лого телеграм.jpg" height="30px" width="30px"></a>
+        <a href=""><img src="C:\Users\shauk\Downloads\Лого ватсап.jpg" height="30px" width="30px"></a>
+        <hr>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключаем Bootstrap JS (jQuery необходимо для работы Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="C:\Users\shauk\Downloads\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\min.js"></script>
+   <script src="C:\Users\shauk\Downloads\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\popper.min.js"></script>
+
+  <script>
+   // JavaScript для сворачивания и разворачивания меню
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active1');
+      $('#content').toggleClass('active1');
+      // Переключение видимости текста в навигационной панели
+      $('.nav-link.active1').toggleClass('visually-hidden');
+    });
+  });
+</script>
+<script>
+  //Скрипт для работы пойсковика 
+  // Функция для выполнения поиска
+  function searchNews() {
+    // Получаем значение из поля ввода
+    var query = document.getElementById('searchInput').value.toLowerCase();
+    var news = document.getElementsByClassName('news');
+
+    // Проходимся по всем новостям и скрываем те, которые не соответствуют запросу
+    for (var i = 0; i < news.length; i++) {
+      var title = news[i].getElementsByClassName('card-title')[0].innerText.toLowerCase();
+      if (title.includes(query)) {
+        news[i].style.display = "block";
+      } else {
+        news[i].style.display = "none";
+      }
+    }
+  }
+
+  // Обработка отправки формы поиска
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Отменяем стандартное поведение формы
+    searchNews(); // Выполняем поиск
+  });
+</script>
+
+<!-- Перевод сайта -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
